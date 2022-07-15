@@ -1,0 +1,41 @@
+body {
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: purple;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+p {
+  margin: 20px;
+}
+
+.changeFontText {
+  font-size: 0.5rem;
+  font-weight: 700;
+}
+
+.hideContent {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid green;
+}
+
+tr {
+  border: 2px dotted red;
+}
