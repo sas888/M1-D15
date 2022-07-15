@@ -70,7 +70,7 @@
           Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
         */
 
-          <!--
+
         QUIZ GAME!
 
         RULES:
@@ -98,4 +98,4 @@
     
         /* WHEN YOU ARE FINISHED
           Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
-        */
+
