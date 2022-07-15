@@ -62,24 +62,54 @@ for (let i = 0; i < 10; i++) {
 }
 console.log(arrayOfArrays);
 
-const ranArrOne = Array.from({ length: 20 }, () =>
-  Math.floor(Math.random() * 50)
-);
-const ranArrTwo = Array.from({ length: 50 }, () =>
-  Math.floor(Math.random() * 100)
-);
+const randIntForArray = () => Math.floor(Math.random() * 50) + 1;
+
+const ranArrOne = () =>
+  Array.from({ length: randIntForArray() }, () =>
+    Math.floor(Math.random() * randIntForArray())
+  );
+console.log("ran arr 1", ranArrOne());
+
+const ranArrTwo = () =>
+  Array.from({ length: randIntForArray() }, () =>
+    Math.floor(Math.random() * randIntForArray())
+  );
+console.log("ran arr 2", ranArrTwo());
 
 const longestArray = function () {
-  const firstArray = ranArrOne;
-  const secondArray = ranArrTwo;
-  if (firstArray > secondArray) {
-    return firstArray;
+  let currentArr = [];
+  const firstArray = ranArrOne();
+  console.log("test first array", firstArray);
+  const secondArray = ranArrTwo();
+  console.log("test second array", secondArray);
+  if (firstArray.length > secondArray.length) {
+    return `The first array is the longest with ${firstArray.length} numbers`;
   } else {
-    return secondArray;
+    return `The second array is the longest with ${secondArray.length} numbers`;
   }
 };
 
 console.log(longestArray());
+
+const returnHigherSum = () => {
+  const firstArrayTest = ranArrOne();
+  console.log("ranArrTest 1", firstArrayTest);
+  const secondArrayTest = ranArrTwo();
+  console.log("ranArrTwo 2", secondArrayTest);
+  let sum1 = 0;
+  for (let number of firstArrayTest) {
+    sum1 += number;
+  }
+  let sum2 = 0;
+  for (let number of secondArrayTest) {
+    sum2 += number;
+  }
+  return sum1 > sum2
+    ? `The first array is the higher sum with a total of ${sum1}`
+    : `The second array is the higher sum with a toal of ${sum2}`;
+};
+
+console.log(returnHigherSum());
 
 const idContainer = document.getElementById("container");
 

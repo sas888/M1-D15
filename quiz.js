@@ -33,6 +33,56 @@ const data = [
     d: "Cascading Style Sheet",
     correct: "d",
   },
+  {
+    question:
+      "What is the most preferred image format used for logos in the Wikimedia database?",
+    a: ".svg",
+    b: ".png",
+    c: ".gif",
+    d: ".jpeg",
+    correct: "a",
+  },
+  {
+    question:
+      "What is the code name for the mobile operating system Android 7.0?",
+    a: "Ice Cream Sandwich",
+    b: "Jelly Bean",
+    c: "Nougat",
+    d: "Marshmallow",
+    correct: "c",
+  },
+  {
+    question: "On Twitter, what is the character limit for a Tweet?",
+    a: "120",
+    b: "160",
+    c: "140",
+    d: "100",
+    correct: "c",
+  },
+  {
+    question: "What does HTML stand for?",
+    a: "Hyper Text Markup Leveler",
+    b: "Hyper Text Marketing Language",
+    c: "Hyper Trainer Marking Language",
+    d: "Hyper Text Markup Language",
+    correct: "d",
+  },
+  {
+    question: "Which CSS property controls the text size?",
+    a: "font-size",
+    b: "text-size",
+    c: "font-style",
+    d: "text-style",
+    correct: "a",
+  },
+  {
+    question: "How do you select elements with class name 'test'?",
+    a: "test",
+    b: ".test",
+    c: "*test",
+    d: "#test",
+    correct: "a",
+  },
 ];
 
 const quiz = document.getElementById("quiz");
